@@ -1,0 +1,204 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f7fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Container for the whole page */
+.container {
+  /* Restrict width similar to the example for a more compact layout */
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header area with logos and titles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .logos {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header .titles {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header .titles .gov-title {
+  color: #00793D; /* green similar to the design */
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.header .titles .dept-title {
+  color: #8a2be2; /* purple accent */
+  font-size: 1rem;
+}
+
+/* Section titles (Emigration Clearance, BMET Registration, Passports) */
+.section-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 20px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title .english {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.section-title .bengali {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Card wrapper */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Profile image */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile .name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #4a4a8d; /* dark purple similar to screenshot */
+  margin-bottom: 5px;
+}
+
+.profile .ec-info {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.profile .ec-info span {
+  font-weight: bold;
+}
+
+/* Table style for details */
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.details-table td {
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+
+.details-table td.label {
+  color: #5f5f5f;
+  width: 40%;
+}
+
+.details-table td.value {
+  color: #333;
+  font-weight: 500;
+}
+
+.details-table td.value.strong {
+  font-weight: bold;
+  color: #4a4a8d; /* dark purple for emphasised fields */
+}
+
+.bmet-logo {
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* Admin form styles */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-form label {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.admin-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4a4a8d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background-color: #3b3675;
+}
+
+.generated-link {
+  margin-top: 20px;
+  word-break: break-all;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.footer-note {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
