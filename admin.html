@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Emigration Clearance Card Link</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Card Link Generator</h1>
+    <p>Fill in the following information to generate a unique card link. Upload a small profile photo (e.g. JPEG/PNG under 200 KB) for best performance.</p>
+    <form id="cardForm" class="admin-form">
+      <label for="photoInput">Profile Photo</label>
+      <input type="file" id="photoInput" accept="image/*" required />
+
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+
+      <label for="ecNo">EC No</label>
+      <input type="text" id="ecNo" required />
+
+      <label for="ecDate">EC Date</label>
+      <input type="text" id="ecDate" placeholder="DD/MMM/YYYY" required />
+
+      <label for="birthDate">Birth Date</label>
+      <input type="text" id="birthDate" placeholder="DD/MM/YYYY" required />
+
+      <label for="passportNo">Passport No</label>
+      <input type="text" id="passportNo" required />
+
+      <label for="passportIssueDate">Passport Issue Date</label>
+      <input type="text" id="passportIssueDate" placeholder="DD/MM/YYYY" required />
+
+      <label for="passportExpireDate">Passport Expire Date</label>
+      <input type="text" id="passportExpireDate" placeholder="DD/MM/YYYY" required />
+
+      <label for="visaNo">Visa No</label>
+      <input type="text" id="visaNo" />
+
+      <label for="visaIssueDate">Visa Issue Date</label>
+      <input type="text" id="visaIssueDate" placeholder="DD/MM/YYYY" />
+
+      <label for="visaExpireDate">Visa Expire Date</label>
+      <input type="text" id="visaExpireDate" placeholder="DD/MM/YYYY" />
+
+      <label for="referralNo">Referral No</label>
+      <input type="text" id="referralNo" />
+
+      <label for="recruitingAgency">Recruiting Agency</label>
+      <input type="text" id="recruitingAgency" />
+
+      <label for="employer">Employer</label>
+      <input type="text" id="employer" />
+
+      <label for="country">Country</label>
+      <input type="text" id="country" />
+
+      <label for="bmetNo">BMET No</label>
+      <input type="text" id="bmetNo" />
+
+      <label for="bmetBirthDate">BMET Birth Date</label>
+      <input type="text" id="bmetBirthDate" placeholder="DD/MM/YYYY" />
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="bloodGroup">Blood Group</label>
+      <input type="text" id="bloodGroup" />
+
+      <label for="nid">NID</label>
+      <input type="text" id="nid" />
+
+      <label for="passportName">Passport Name</label>
+      <input type="text" id="passportName" />
+
+      <label for="passportNo1">Passport No (1)</label>
+      <input type="text" id="passportNo1" />
+
+      <button type="submit">Generate Link</button>
+    </form>
+    <div id="result" class="generated-link" style="display:none;"></div>
+  </div>
+</body>
+</html>
