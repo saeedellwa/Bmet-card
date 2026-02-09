@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emigration Clearance Card</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="card.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header with logos and titles -->
+    <div class="header">
+      <div class="logos">
+        <img src="assets/gov-logo.png" alt="Government Logo" />
+        <img src="assets/bmet-logo.png" alt="BMET Logo" />
+      </div>
+      <div class="titles">
+        <div class="gov-title">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</div>
+        <div class="dept-title">জনশক্তি কর্মসংস্থান ও প্রশিক্ষণ ব্যুরো</div>
+      </div>
+    </div>
+
+    <!-- Emigration Clearance section -->
+    <div class="section-title">
+      <span class="bengali">বহির্গমন ছাড়পত্র</span>
+      <span class="english">Emigration Clearance</span>
+    </div>
+    <div class="card">
+      <div class="profile">
+        <img id="photo" src="" alt="Profile Photo" />
+        <div class="name" id="name">Name</div>
+        <div class="ec-info">
+          <div>EC No: <span id="ecNo"></span></div>
+          <div>EC Date: <span id="ecDate"></span></div>
+        </div>
+      </div>
+      <table class="details-table">
+        <tr>
+          <td class="label">Birth Date</td>
+          <td class="value" id="birthDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Passport No</td>
+          <td class="value" id="passportNo"></td>
+        </tr>
+        <tr>
+          <td class="label">Passport Issue Date</td>
+          <td class="value" id="passportIssueDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Passport Expire Date</td>
+          <td class="value" id="passportExpireDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Visa No</td>
+          <td class="value" id="visaNo"></td>
+        </tr>
+        <tr>
+          <td class="label">Visa Issue Date</td>
+          <td class="value" id="visaIssueDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Visa Expire Date</td>
+          <td class="value" id="visaExpireDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Referral No</td>
+          <td class="value" id="referralNo"></td>
+        </tr>
+        <tr>
+          <td class="label">Recruiting Agency</td>
+          <td class="value strong" id="recruitingAgency"></td>
+        </tr>
+        <tr>
+          <td class="label">Employer</td>
+          <td class="value strong" id="employer"></td>
+        </tr>
+        <tr>
+          <td class="label">Country</td>
+          <td class="value strong" id="country"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- BMET Registration section -->
+    <div class="section-title">
+      <span class="bengali">বিএমইটি রেজিস্ট্রেশন</span>
+      <span class="english">BMET Registration</span>
+      <!-- Optionally include BMET logo here -->
+    </div>
+    <div class="card">
+      <table class="details-table">
+        <tr>
+          <td class="label">BMET No</td>
+          <td class="value" id="bmetNo"></td>
+        </tr>
+        <tr>
+          <td class="label">Name</td>
+          <td class="value strong" id="bmetName"></td>
+        </tr>
+        <tr>
+          <td class="label">Birth Date</td>
+          <td class="value" id="bmetBirthDate"></td>
+        </tr>
+        <tr>
+          <td class="label">Gender</td>
+          <td class="value" id="gender"></td>
+        </tr>
+        <tr>
+          <td class="label">Blood Group</td>
+          <td class="value" id="bloodGroup"></td>
+        </tr>
+        <tr>
+          <td class="label">NID</td>
+          <td class="value" id="nid"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Passports section -->
+    <div class="section-title">
+      <span class="bengali">পাসপোর্ট</span>
+      <span class="english">Passports</span>
+    </div>
+    <div class="card">
+      <table class="details-table">
+        <tr>
+          <td class="label">Name</td>
+          <td class="value strong" id="passportName"></td>
+        </tr>
+        <tr>
+          <td class="label">Passport No</td>
+          <td class="value" id="passportNo1"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer-note">
+      <!-- Optional note or disclaimer -->
+      This page was generated automatically. Please verify details with official sources.
+    </div>
+  </div>
+</body>
+</html>
